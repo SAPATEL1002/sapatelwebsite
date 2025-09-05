@@ -1,5 +1,74 @@
 /* Mobile fixes and additional styles - Enhanced for better mobile experience */
 
+/* Filter buttons styling for different screen sizes */
+/* For tablet and medium screens - 2 buttons per line */
+@media (min-width: 481px) and (max-width: 768px) {
+    .filter-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* For small mobile screens - all buttons in one horizontal line */
+@media (max-width: 480px) {
+    .portfolio-filter .container {
+        padding: 0 5px;
+    }
+    
+    .filter-buttons {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 2px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .filter-btn {
+        flex: 1 1 0;
+        padding: 6px 2px;
+        font-size: 9px;
+        border-radius: 12px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+        border-width: 1px;
+    }
+
+}
+
+
+/* Header styling for mobile */
+@media (max-width: 768px) {
+    .header {
+        background-color: #1565C0;
+    }
+    
+    .nav-logo .logo-text h1,
+    .nav-logo .logo-text p {
+        color: #ffffff;
+    }
+    
+    .nav-link {
+        color: #ffffff;
+    }
+    
+    .hamburger .bar {
+        background-color: #ffffff;
+    }
+}
+
 /* Contact card override styling */
 .contact-card {
     background-color: #2E7D32;
@@ -16,6 +85,16 @@
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .get-in-touch {
+        background-color: #2E7D32;
+        color: white;
+        padding: 15px;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
 }
 
 .get-in-touch h3 {
@@ -35,6 +114,8 @@
     .contact-info-item {
         padding: 12px;
         margin-bottom: 15px;
+        background-color: #2E7D32;
+        color: white;
     }
     
     .contact-icon {
@@ -45,20 +126,25 @@
     .contact-icon img {
         width: 36px;
         height: 36px;
+        filter: brightness(0) invert(1);
     }
     
     .contact-text h3 {
         font-size: 16px;
+        color: white;
     }
     
     .contact-text p {
         font-size: 14px;
+        color: white;
     }
     
     .social-icons a {
         width: 36px;
         height: 36px;
         font-size: 16px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -73,11 +159,13 @@
         padding: 15px 0;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         z-index: 1001;
+        background-color: #1565C0;
     }
     
     .nav-menu.active {
         max-height: 90vh;
         overflow-y: auto;
+        top: 70px;
     }
     
     .nav-item {
@@ -88,6 +176,7 @@
         display: block;
         padding: 10px 15px;
         font-size: 16px;
+        color: #ffffff;
     }
     
     /* Better spacing for mobile content */
@@ -98,6 +187,26 @@
     /* Improved mobile hero section */
     .hero-content {
         padding: 0 15px;
+    }
+    
+    /* Footer styling for mobile */
+    footer {
+        background-color: #2E7D32;
+        color: #ffffff;
+    }
+    
+    .footer-section h4,
+    .footer-links a,
+    .footer-contact p,
+    .footer-copyright p,
+    .footer-copyright a,
+    .social-links a {
+        color: #ffffff;
+    }
+    
+    .social-links a {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
     }
     
     .hero-title {
@@ -125,6 +234,21 @@
         margin-bottom: 25px;
     }
     
+    /* Fix service detail image placement for mobile */
+    .service-detail-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service-detail-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    
+    .service-detail-text {
+        order: 2;
+    }
+    
     /* Improved hamburger menu */
     .hamburger {
         padding: 10px;
@@ -133,7 +257,7 @@
     .bar {
         margin: 4px 0;
     }
-}
+
 
 /* Extra small devices */
 @media (max-width: 480px) {
