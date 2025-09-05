@@ -1,0 +1,172 @@
+/* Mobile fixes and additional styles - Enhanced for better mobile experience */
+
+/* Contact card override styling */
+.contact-card {
+    background-color: #2E7D32;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Get in Touch section styling */
+.get-in-touch {
+    background-color: #2E7D32;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.get-in-touch h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.get-in-touch p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Contact info item responsive styling */
+@media (max-width: 768px) {
+    .contact-info-item {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-icon {
+        flex: 0 0 40px;
+        margin-right: 10px;
+    }
+    
+    .contact-icon img {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .contact-text h3 {
+        font-size: 16px;
+    }
+    
+    .contact-text p {
+        font-size: 14px;
+    }
+    
+    .social-icons a {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Improved mobile navigation */
+    .nav-menu {
+        padding: 15px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+    }
+    
+    .nav-menu.active {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .nav-item {
+        margin: 12px 0;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    /* Better spacing for mobile content */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Improved mobile hero section */
+    .hero-content {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    /* Better mobile footer */
+    .footer-content {
+        padding: 20px 0;
+    }
+    
+    .footer-links h3 {
+        margin-top: 20px;
+    }
+    
+    /* Improved touch targets */
+    .social-links a,
+    .social-icons a {
+        width: 44px;
+        height: 44px;
+    }
+    
+    /* Better spacing for service cards */
+    .service-card {
+        margin-bottom: 25px;
+    }
+    
+    /* Improved hamburger menu */
+    .hamburger {
+        padding: 10px;
+    }
+    
+    .bar {
+        margin: 4px 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logo-text h1 {
+        font-size: 20px;
+    }
+    
+    .logo-text p {
+        font-size: 10px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+}
