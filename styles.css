@@ -612,6 +612,7 @@ body {
     font-weight: 600;
     margin-bottom: 20px;
     color: white;
+    text-align: left;
 }
 
 .footer-logo {
@@ -642,16 +643,19 @@ body {
     color: white;
 }
 
+/* Ensure the footer subtitle is white only in the footer */
 .footer-logo .logo-text p {
     font-size: 12px;
     margin: 0;
-    opacity: 0.8;
+    color: #fff; /* force white in footer */
+    opacity: 1;  /* solid white, not dimmed */
 }
 
 .footer-contact p {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    text-align: left;
     gap: 10px;
 }
 
@@ -661,6 +665,7 @@ body {
 
 .footer-links li {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .footer-links a {
